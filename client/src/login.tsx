@@ -9,7 +9,7 @@ const LoginButton = () => {
       onClick={() =>
         loginWithRedirect({
           appState: {
-            returnTo: "/",
+            returnTo: "/profile",
           },
         })
       }

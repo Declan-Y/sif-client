@@ -12,7 +12,7 @@ export const AuthProviderNavigate = ({ children }: any) => {
       domain={`${process.env.REACT_APP_DOMAIN}`}
       clientId={`${process.env.REACT_APP_CLIENT_ID}`}
       authorizationParams={{
-        redirect_uri: "http://localhost:3000/callback",
+        redirect_uri: "https://localhost:3000/callback",
       }}
       onRedirectCallback={onreidirectCallback}
     >
