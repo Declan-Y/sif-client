@@ -14,7 +14,7 @@ export const AuthProviderNavigate = ({ children }: any) => {
       useRefreshTokens={true}
       cacheLocation="localstorage"
       authorizationParams={{
-        redirect_uri: "https://localhost:3000/callback",
+        redirect_uri: process.env.REACT_APP_REDIRECT,
       }}
       onRedirectCallback={onreidirectCallback}
     >
