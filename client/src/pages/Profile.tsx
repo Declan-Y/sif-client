@@ -1,8 +1,10 @@
 import { useAuth0 } from "@auth0/auth0-react";
+import { Layout } from "../layout/Layout";
 
 export const Profile = () => {
-  const { isAuthenticated } = useAuth0();
-
-  console.log(isAuthenticated);
-  return <h1>Profile</h1>;
+  return (
+    <Layout>
+      <h1>Profile</h1>
+    </Layout>
+  );
 };

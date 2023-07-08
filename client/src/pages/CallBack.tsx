@@ -1,8 +1,9 @@
-import { useAuth0 } from "@auth0/auth0-react";
+import { Layout } from "../layout/Layout";
 
 export const CallBack = () => {
-  const { isAuthenticated } = useAuth0();
-
-  console.log(isAuthenticated);
-  return <h1>Callback</h1>;
+  return (
+    <Layout>
+      <h1>Callback</h1>
+    </Layout>
+  );
 };

@@ -11,6 +11,8 @@ export const AuthProviderNavigate = ({ children }: any) => {
     <Auth0Provider
       domain={`${process.env.REACT_APP_DOMAIN}`}
       clientId={`${process.env.REACT_APP_CLIENT_ID}`}
+      useRefreshTokens={true}
+      cacheLocation="localstorage"
       authorizationParams={{
         redirect_uri: "https://localhost:3000/callback",
       }}
